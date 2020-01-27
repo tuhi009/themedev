@@ -28,6 +28,14 @@ body {
 
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%S;
+}
+
 /*----style heading one ----*/
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -175,7 +183,6 @@ ul {
 .navbar {
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0.804)
-
 }
 
 .nav {
@@ -184,7 +191,7 @@ ul {
 }
 
 .nav-item {
-    color:  rgb(12, 12, 12);
+    color: rgb(12, 12, 12);
     line-height: 15px;
     margin-top: 30px;
     font-size: 18px;
@@ -198,14 +205,14 @@ ul {
     display: inline-block;
 }
 
-li.active a{
+li.active a {
     /* background-color: #B200FD; */
     color: #B200FD !important;
     border-radius: 15px;
     border-bottom: 2px solid #B200FD;
 }
 
-.nav-item .active{
+.nav-item .active {
     /* background-color: #B200FD; */
     color: #B200FD !important;
     border-radius: 15px;
@@ -216,7 +223,7 @@ li.active a{
     /* background-color: #B200FD; */
     color: #B200FD !important;
     cursor: pointer;
-    
+
 }
 
 /* ----------------------------------------------------------------
@@ -264,11 +271,12 @@ li.active a{
     margin-top: 30px;
 }
 
-.type-wrap{
+.type-wrap {
     color: #B200FD;
     font-size: 36px;
+    text-transform: uppercase;
 }
-  
+
 /*---michel jhon photo---*/
 .john img {
     width: 410px;
@@ -635,15 +643,20 @@ li.active a{
 .owl-carousel button.owl-dot {
     height: 4px;
     width: 20px;
-    background:black;
+    background: black;
     display: inline-block;
     margin: 2px;
 
 }
 
 
-.owl-carousel button.owl-dot.active{
-    background:#B200FD;
+.owl-carousel button.owl-dot.active {
+    background: #B200FD;
+}
+
+.owl-carousel {
+    -ms-touch-action: none;
+    touch-action: none;
 }
 
 
@@ -738,7 +751,7 @@ li.active a{
     width: 100%;
     background-image: url(../img/contact.jpg);
     background-size: cover;
-    background-position:bottom;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 
@@ -804,6 +817,38 @@ li.active a{
     background-color: rgb(36, 36, 36);
     color: rgb(255, 255, 255);
 }
+
+.scrollbar {
+    margin-left: 30px;
+    float: left;
+    height: 300px;
+    width: 65px;
+    background: #F5F5F5;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+.force-overflow {
+    min-height: 450px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b300ff7d;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(90deg, rgb(180, 0, 255) 25%, transparent 25%, transparent 50%, rgb(180, 0, 255) 50%, rgb(180, 0, 255) 75%, transparent 75%, transparent);
+}
+
 
 
 
@@ -895,6 +940,7 @@ li.active a{
         font-size: 25px;
         color: #B200FD;
     }
+
     .text {
         position: absolute;
         margin-top: 0px;
@@ -1022,13 +1068,13 @@ li.active a{
 
     .contact-form-btn {
         background-color: #B200FD;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 36px;
-    text-align: right;
-    float: right;
-    color: #fff;
-    box-shadow: -1px 4px 9px 0px #b200fd8c;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 36px;
+        text-align: right;
+        float: right;
+        color: #fff;
+        box-shadow: -1px 4px 9px 0px #b200fd8c;
     }
 
 
